@@ -1,0 +1,793 @@
+/* Fonts */
+
+@font-face{
+	font-family: 'Lato', sans-serif;
+}
+
+/* Generic block element styles */
+
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', 'Helvetica', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+header {
+	position: absolute fixed;
+	width: 100%;
+	height: 75px;
+	/*padding: 10px 20px 10px 20px;*/
+	background: #000000;
+}
+
+footer {
+	height: 120px;
+	padding: 10px 20px 10px 20px;
+	background: #A9ABAE;
+	clear: both;
+}
+
+h1 {
+	margin: auto;
+	width: 300px;
+	font-size: 50px;
+	font-weight: 900;
+	text-align: center;
+}
+
+h2 {
+	margin: auto;
+	width: 300px;
+	font-size: 30px;
+	font-weight: 700;
+	padding-top: 30px;
+	text-align: center;
+}
+
+h3 {
+	margin: auto;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+/***************************************/
+/* 			Header & Navigation	       */
+/***************************************/
+
+nav {
+	width: 100%;
+	position: fixed;
+	text-align: center;
+	float: left;
+	background: #000000;
+	z-index: 999;
+}
+
+#divLogo{
+	float: left;
+}
+
+#closeIconNav {
+	display: none;
+}
+
+.navItem {
+	display: inline-block;
+	margin-right: 80px;
+	font-size: 24px;
+	font-weight: 600;
+	color: #FFF333;
+}
+
+#divLogo > img {
+	height: 65px;
+	width: 65px;
+	padding: 5px 0 0 5px;
+}
+
+.hamburger {
+	display: none;
+}
+
+
+nav li:hover {
+	border-bottom: 2px solid #FFF333;
+}
+
+/***************************************/
+/* 			Homepage Elements 	       */
+/***************************************/
+
+.wrapper {
+	height: 100%;
+}
+
+/* Hero Block */
+
+#heroBlock {
+	height: 300px;
+	padding-top: 150px;
+	background: url(../img/colours.jpg) no-repeat center;
+	background-size: cover;
+}
+
+#heroBlock > h2 {
+	font-style: italic;
+}
+
+/* Generic Homepage Body Classes */
+
+.divContainer {
+	height: 300px;
+	width: 100%;
+}
+
+/* About Me Block */
+
+#aboutMe {
+	height: 100%;
+	background: rgba(169, 171, 174, 0.3);
+}
+
+#aboutMe > p {
+	margin: auto;
+	width: 600px;
+	font-weight: 400;
+	padding-top: 30px;
+}
+
+/* Event Block */
+
+#upcomingEvents {
+	height: 350px;
+	background: rgba(255, 243, 51, 1);
+}
+
+.eventBlockContainer {
+	margin: 15px auto auto auto;
+	width: 760px;
+	height: 190px;
+}
+
+.eventBlock {
+	height: 100%;
+	width: 220px;
+	background: rgba(169, 171, 174, 1);
+	box-shadow: 0 5px 5px 0 rgba(169, 171, 174, 0.7);
+	border-radius: 10px;
+}
+
+#event1 {
+	float: left;
+	margin-right: 50px;
+}
+
+#event2 {
+	float: left;
+}
+
+#event3 {
+	float: right;
+}
+
+.eventBlock > h3 {
+	padding: 10px 0 0 10px;
+}
+
+.eventBlock > p {
+	height: 100%;
+	width: 200px;
+	padding: 10px 30px 0 10px;
+	margin: 0;
+}
+
+.eventBlock p a {
+	font-weight: 700;
+	color: #000000;
+}
+
+.eventBlock p a:hover {
+	color: #FFF333;
+}
+
+/* Contact Me Block */
+
+#contactMe {
+	height: 100%;
+	padding: 100px 0 0 0;
+	background: rgba(169, 171, 174, 0.3);
+	text-align: center;
+}
+
+#contactMe > button {
+	height: 100px;
+	width: 300px;
+	font-size: 24px;
+	font-weight: 700;
+	background: #FFFFFF;
+	border: solid 5px #000000;
+	border-radius: 5px;
+}
+
+/* Contact Form Pop-up */
+
+.contactFormContainer {
+	width: 100%;
+	position: relative;
+	float: left;
+	z-index: 100;
+}
+
+.contactForm {
+	display: none;
+	background: #ffffff;
+	border-radius: 5px;
+	box-shadow: 5px rgba(255, 243, 51, 1);
+	z-index: 100;	
+	/* Position pop-up in centre of window */
+	position: fixed;
+	width: 500px;
+	top: 16%;
+	left: 30%;
+}
+
+#closeIconContactForm > a > img {
+	height: 30px;
+	width: 30px;
+	float: right;
+	margin: 10px 10px 0 0;
+}
+
+.contactForm > h2 {
+	text-align: center;
+}
+
+#contactFormInputContainer {
+	width: 500px;
+	margin: 20px 0 0 75px;
+}
+
+.contactFormInput {
+	margin-bottom: 20px;
+}
+
+.contactFormLabel {
+	width: 50px;
+}
+
+.contactFormInput > input {
+	width: 350px;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	padding-left: 2px;
+}
+
+textarea {
+	width: 350px;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	padding-left: 2px;
+}
+
+#submitButton {
+	margin-top: 30px;
+	margin-left: 100px;
+	padding-bottom: 10px;
+}
+
+#submitButton > button {
+	height: 50px;
+	width: 150px;
+	margin-bottom: 20px;
+	font-size: 24px;
+	font-weight: 700;
+	background: #FFFFFF;
+	border: solid 5px #000000;
+	border-radius: 5px;
+}
+
+#contactMe button:hover,
+#submitButton button:hover {
+	background: #A9ABAE;
+	border: #A9ABAE;
+	color: #FFF333;
+}
+
+/***************************************/
+/* 			Blog Page Elements 	       */
+/***************************************/
+
+#blogPageContainer {
+	width: 960px;
+	margin: 40px auto;
+}
+
+#blogContainer,
+.hiddenBlogsContainer {
+	width: 600px;
+	float: left;
+}
+
+.blogPost {
+	margin-bottom: 80px;
+}
+
+.blogPost h2 {
+	width: 100%;
+	padding: 0;
+	text-align: left;
+}
+
+.readmoreButton {
+	width: 100px;
+	font-weight: 700;
+	background: #FFFFFF;
+	border: solid 2px #000000;
+	border-radius: 5px;
+	float: right;
+	color: #000000;
+	text-align: center;
+}
+
+.readmoreButton:hover{
+	background: #000000;
+	color: #FFF333;
+}
+
+.hiddenBlogs {
+	display: none;
+}
+
+#blogPageContainer button {
+	height: 50px;
+	width: 200px;
+	margin-left: 200px;
+	font-size: 18px;
+	font-weight: 700;
+	background: #FFFFFF;
+	border: solid 5px #000000;
+	border-radius: 5px;
+}
+
+#blogPageContainer button:hover {
+	background: #A9ABAE;
+	border: #A9ABAE;
+	color: #FFF333;
+}
+
+#sidebar {
+	width: 300px;
+	height: 1000px;
+	padding-left: 20px;
+	float: right;
+}
+
+.sidebarCategories ul li a {
+	color: #000000;
+	font-weight: 400;
+}
+
+.sidebarCategories ul li a:hover {
+	color: #FFF333;
+}
+
+.sidebarEvents .eventBlock {
+	height: 190px;
+	margin: 20px 0;
+	box-shadow: none;
+}
+
+.sidebarEvents .eventBlock  {
+	margin: 20px 0;
+	box-shadow: none;
+}
+
+/***************************************/
+/* 			Blog Post Elements 	       */
+/***************************************/
+
+#blogPostContainer {
+	width: 600px;
+	margin-bottom: 40px;
+	float: left;
+}
+
+#blogPostContainer h2 {
+	padding: 0;
+}
+
+#blogPostContainer img {
+	width: 100%;
+	margin: 20px 0;
+}
+
+#blogPostContainer button {
+	height: 50px;
+	width: 200px;
+	margin-left: 200px;
+	font-size: 18px;
+	font-weight: 700;
+	background: #FFFFFF;
+	border: solid 5px #000000;
+	border-radius: 5px;
+}
+
+#blogPostContainer button:hover {
+	background: #A9ABAE;
+	border: #A9ABAE;
+	color: #FFF333;
+}
+
+/***************************************/
+/* 			Footer           	       */
+/***************************************/
+
+footer h3 {
+	text-align: center;
+}
+
+#footerLogoContainer {
+	width: 100%;
+	text-align: center;
+}
+
+footer ul li {
+	display: inline-block;
+	text-align: center;
+}
+
+#facebookLogo {
+	margin-right: 20px;
+}
+
+footer ul li img {
+	height: 35px;
+}
+
+footer p {
+	text-align: center;
+}
+
+/***************************************/
+/* 			JS Classes    	 	       */
+/***************************************/
+
+.contactFormFilter {
+	background: #000000;
+	opacity: .55;
+	z-index: 10;
+	width: 100%	;
+	height: 1615px;
+	display: inline;
+	float: left;
+	position: absolute;
+}
+
+.inlineBlock {
+	display: inline-block;
+}
+
+.doNotDisplay {
+	display: none;
+}
+
+.error {
+	background: #FF9b9b;
+	border: 1px solid #ff0000;
+}
+
+/***************************************/
+/* 			Media Queries  	 	       */
+/***************************************/
+
+@media screen and (max-width: 768px) {
+
+	/* Tablet Header */
+
+	header {
+		width: 100%;
+		height: 70px;
+	}
+	
+	/* Tablet Navigation */
+
+	.hamburger {
+		display: block;
+		float: right;
+	}
+
+	.hamburger > img {
+		height: 65px;
+		width: 65px;
+		padding-right: 5px;
+	}
+
+	.navigation {
+		display: none;
+		float: right;
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		background: #000000;
+		text-decoration: none;
+		border-top: 1px solid #A9ABAE;
+	}
+
+	.navItem {
+		width: 100%;
+		height: 60px;
+		padding-top: 30px;
+		color: #ffffff;
+		font-weight: 700;
+		font-size: 20px;
+		text-align: center;
+		border-bottom: 1px solid #A9ABAE;
+	}
+
+	#closeIconNav {
+		float: right;
+	}
+
+	#closeIconNav > a > img {
+		height: 65px;
+		width: 65px;
+	}
+
+	nav li:hover {
+		background: rgba(255, 243, 51, 1);
+		color: #000000;
+	}
+
+	/* Tablet Upcoming Events */
+
+	.eventBlockContainer {
+		width: 80%;
+		margin-top: 40px;
+	}
+
+	.eventBlock {
+		width: 180px;
+		height: 80%;
+		padding-bottom: 5px;
+	}
+
+	#event1 {
+		float: left;
+		margin-right: 37px;
+	}
+
+	.eventBlock > p {
+		height: 100%;
+		width: 100%;
+		font-size: 12px;
+	}
+
+	.eventBlock > p > a {
+		font-size: 16px;
+	}
+
+	/* Tablet Contact Form Pop-up */
+
+	.contactForm {
+		top: 20%;
+		left: 20%;
+	}
+
+	/* Tablet JS Classes */
+
+	.contactFormFilter {
+		height: 1615px;
+	}
+
+	/* Tablet Blog Page & Blog Post */
+
+	#blogPageContainer {
+		width: 100%;
+		margin: 40px auto;
+	}
+
+	#blogPageContainer button {
+		margin-left: 284px;
+	}
+
+	#blogContainer,
+	#blogPostContainer,
+	.hiddenBlogsContainer {
+		margin-left: 84px;
+	}
+
+	aside {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 320px) {
+
+	body {
+		font-size: 12px;
+	}
+
+	/* Mobile Generic Elements */
+
+	header {
+		height: 49px;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	h3 {
+		font-size: 16px;
+	}
+
+	/* Mobile Header & Navigation */
+
+	#divLogo > img {
+		height: 45px;
+		width: 45px;
+	}
+
+	.hamburger > img {
+		height: 45px;
+		width: 45px;
+	}
+
+	#closeIconNav {
+		width: 45px;
+	}
+
+	#closeIconNav > a > img {
+		height: 35px;
+		width: 35px;
+	}
+
+	/* Mobile Hero Block */
+
+	#heroBlock {
+		height: 200px;
+		padding-top: 80px;
+	}
+
+	/* Mobile About Me Block */
+
+	#aboutMe > p {
+		margin: auto;
+		width: 250px;
+		padding-top: 30px;
+	}
+
+	/* Mobile Event Block*/
+
+	#upcomingEvents {
+		height: 600px;
+		background: rgba(255, 243, 51, 1);
+	}
+
+	.eventBlockContainer {
+		width: 100%;
+	}
+
+	.eventBlock {
+		height: 70%;
+		margin: auto;
+		margin-bottom: 20px;
+		line-height: 1.2;
+	}
+
+	#event1 {
+		float: none;
+		margin: 0 auto 20px auto;
+	}
+
+	#event2 {
+		float: none;
+	}
+
+	#event3 {
+		float: none;
+	}
+
+	/* Mobile Contact Me Block */
+
+	#contactMe > button {
+		height: 70px;
+		width: 200px;
+		font-size: 20px;
+	}
+
+	/* Mobile Contact Form Pop-up */
+
+	.contactForm {
+		width: 250px;
+		top: 20%;
+		left: 10%;
+		border: 1px solid #000000;
+	}
+	
+	#closeIconContactForm > a > img {
+		height: 20px;
+		width: 20px;
+	}
+
+	.contactForm > h2 {
+		text-align: left;
+		margin: 5px 0 0 10px;
+		padding: 0;
+	}
+
+	#contactFormInputContainer {
+		width: 100%;
+		margin: 10px 0 0 50px;
+	}
+
+
+	.contactFormInput > input {
+		width: 150px;
+	}
+
+	textarea {
+		width: 150px;
+	}
+
+	#submitButton {
+		margin-left: 0;
+	}
+
+	#submitButton > button {
+		font-size: 20px;
+	}
+
+	/* Mobile JS Classes */
+
+	.contactFormFilter {
+		height: 1695px;
+	}
+
+	/* Mobile Blog Page & Blog Post */
+
+	#blogPageContainer {
+		width: 100%;
+		margin: 40px auto;
+	}
+
+	#blogContainer,
+	#blogPostContainer,
+	.hiddenBlogsContainer {
+		width: 250px;
+		margin-left: 35px;
+		float: none;
+	} 
+
+	#blogPageContainer button {
+		margin-left: 60px;
+	}
+
+	#blogPostContainer button {
+		margin-left: 25px;
+	}
+
+	#blogPostContainer button {
+		margin-top: 15px;
+	}
+}
+
